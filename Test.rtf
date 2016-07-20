@@ -1,0 +1,18 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww31920\viewh15800\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 =IFERROR(INDEX(BOM!B$12:B$1012;SMALL(IF((BOM!$C$12:$C$1012='PARTS LIST'!$C$3)*(BOM!$D$12:$D$1012="Y");ROW(BOM!B$12:B$1012)-ROW(BOM!B$12)+1);ROWS(BOM!B$12:BOM!B12)));"")\
+\
+=IFERROR(INDEX(BOM!$B$12:$B$216;MATCH(0; COUNTIF(Sheet1!$A$4:A4; BOM!$B$12:$B$216); 0));"")\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 =IFERROR(INDEX(BOM!B$12:B$216;MATCH(0; COUNTIF(Sheet1!$A$4:A4; BOM!$B$12:$B$216); 0));"")\
+\
+=SUMIFS(Sheet2!E4:E12;MATCH(ID;Sheet2!$K$4:$K$12))\
+\
+INDEX(BOM!$B$12:$B$216;MATCH(Sheet2!$D4;BOM!$J$12:$J$216;0);1)\
+\
+INDEX(A:A;MATCH(VALUE;B:B;0);1)}
